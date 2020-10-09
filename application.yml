@@ -1,26 +1,14 @@
 spring:
  profiles:
   active:
-  - test
+  - dev
 ---
-server:
- port: 8201
 spring:
  profiles: dev
  application:
-  name: servicecloud-config-client
-eureka:
- client:
-  service-url:
-   defaultZone: http://eureka-dev:8003/eureka/
+  name: servicecloud-config-mhys-dev
 ---
-server:
- port: 8202
 spring:
  profiles: test
  application:
-  name: servicecloud-config-client
-eureka:
- client:
-  service-url:
-   defaultZone: http://eureka-test:8003/eureka/
+  name: servicecloud-config-mhys-test

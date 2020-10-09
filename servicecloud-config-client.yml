@@ -11,7 +11,7 @@ spring:
   name: servicecloud-config-client
 eureka:
  client:
-  service-url:
+  service:
    defaultZone: http://eureka-dev:8003/eureka/
 ---
 server:
@@ -22,5 +22,5 @@ spring:
   name: servicecloud-config-client
 eureka:
  client:
-  service-url:
+  service:
    defaultZone: http://eureka-test:8003/eureka/
